@@ -6,13 +6,9 @@ import (
 
 func uploadEntry(entry Entry) {
 	session, err := mgo.Dial(Server)
-	if err != nil {
-		panic(err)
-	}
+	checkError(err)
 	defer session.Close()
 	c := session.DB(Database).C("entries")
 	err = c.Insert(&entry)
-	if err != nil {
-		panic(err)
-	}
+	checkError(err)
 }
