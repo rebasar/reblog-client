@@ -7,13 +7,10 @@ This is a simple client for adding entries to [reblog](https://github.com/rebasa
 Assuming that your go environment is [setup correctly](https://golang.org/doc/code.html), just run:
 
 ```
-go get github.com/ogier/pflag
-go get github.com/spf13/viper
-go get gopkg.in/mgo.v2
 go get github.com/rebasar/reblog-client
 ```
 
-TODO: Add a Makefile for automating this process.
+This will download the project and it's dependencies and install them in your `GOPATH`
 
 ## Input format
 
